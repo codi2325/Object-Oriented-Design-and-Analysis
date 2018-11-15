@@ -52,7 +52,7 @@ public class Wheels implements ShowScreenInterface{
 	
 	@Override
 	public String toString() {
-		return "WHEELS: " + "Type: " + this.type + ". " +"Size: " + this.size +"." + " Color: "+ this.color +"." + " Hardness " + this.hardness +".\n";
+		return "WHEELS: " + "Type: " + this.type + ". " +"Size: " + this.size +"." + " Color: "+ this.color +"." + " Hardness: " + this.hardness +".\n";
 	}
 	
 	

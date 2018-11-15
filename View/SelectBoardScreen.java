@@ -19,6 +19,12 @@ public class SelectBoardScreen implements ShowScreenInterface {
 		//reader.close();
 		switch(input) {
 		case "1":
+			Board longboard = new Longboard();
+			c.setBoard(longboard);
+//			longboard.setLength("Long");
+//			longboard.setWidth("Wide");
+			
+			System.out.println(longboard);
 			LongBoardView obj = new LongBoardView();
 			obj.showScreen(c);
 			

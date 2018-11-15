@@ -28,7 +28,7 @@ public class Controller {
 				
 				if (d.getType().equals(input))
 				{
-					c.setDeck(d);
+					c.getBoard().setDeck(d);
 					valid = true;
 				}
 				
@@ -60,7 +60,7 @@ public class Controller {
 				
 				if (t.getType().equals(input))
 				{
-					c.setTrucks(t);
+					c.getBoard().setTruck(t);
 					valid = true;
 				}
 				
@@ -93,7 +93,7 @@ public class Controller {
 				
 				if (w.getType().equals(input))
 				{
-					c.setWheels(w);
+					c.getBoard().setWheels(w);
 					valid = true;
 				}
 				

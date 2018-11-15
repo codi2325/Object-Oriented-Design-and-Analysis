@@ -31,7 +31,7 @@ public class LongBoardView implements ShowScreenInterface {
 				//input = r2.nextLine();
 				
 				controller1.selectDeck(c);
-				System.out.println(c.getDeck());
+				System.out.println(c.getBoard().getDeck());
 				break;
 				
 			case "2":
@@ -43,7 +43,7 @@ public class LongBoardView implements ShowScreenInterface {
 				
 				
 				controller1.selectTrucks(c);
-				System.out.println(c.getTrucks());
+				System.out.println(c.getBoard().getTruck());
 				break;
 			case "3":
 				System.out.println(Wheels.presets);
@@ -54,27 +54,31 @@ public class LongBoardView implements ShowScreenInterface {
 				
 				
 				controller1.selectWheels(c);
-				System.out.println(c.getWheels());
+				System.out.println(c.getBoard().getWheels());
 				break;
 			}
 			
 			
 		}		
-			
-			//Controller buildSkateBoard = new Controller();
-			//buildSkateBoard.selectBoard(input);
-			//		switch(input): 
-			//			case"LandYatch": 
-			//				customer.setBoard(landYatch);
 		
+		CheckoutView checkout = new CheckoutView();
+		checkout.showScreen(c);
+			
 			
 		}
 
 	private boolean isValid(Customer c) {
-		if (c.getDeck() != null && c.getTrucks() != null && c.getWheels()!= null)
+		if (c.getBoard().getDeck() != null && c.getBoard().getTruck() != null && c.getBoard().getWheels()!= null)
+		{
 			return true;
-				
-		return false;
+		}
+		else {
+			return false;
+		}
+			
+		
+	
+	
 	}
 		
 	}
