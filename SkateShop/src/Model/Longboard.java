@@ -23,6 +23,6 @@ public class Longboard extends Board {
 	
 	@Override
 	public String toString() {
-		return  "\n"+"LONGBOARD: " +"Length: " + this.length +"." + " Width: "+ this.width + ". Dropthrough board: " + this.dropthrough;
+		return  "\n"+"LONGBOARD: " +"Length: " + this.length +"." + " Width: "+ this.width + ".";
 	}
 }

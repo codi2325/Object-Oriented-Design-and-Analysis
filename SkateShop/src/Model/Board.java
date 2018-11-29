@@ -99,7 +99,7 @@ public class Board implements Cloneable{
 	
 	@Override
 	public String toString() {
-		return "\n"+ "Boardtype: " +this.boardType + ". Length: " + this.length +"." + " Width: "+ this.width +"." + "Deck: " + this.deck.getType() + ". Trucks: " + this.truck.getType() +"." + " Wheels " + this.wheels.getType() + ".";
+		return "\n"+ "Boardtype: " +this.boardType + ".";
 	}
 
 	
